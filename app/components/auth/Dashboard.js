@@ -1,23 +1,30 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { StyleSheet, Platform, Image, Text, View } from "react-native";
+import * as firebase from "firebase";
 
-class Dashboard extends Component {
+export default class Dashboard extends React.Component {
+  state = { currentUser: null };
+
+  componentDidMount() {
+    const { currentUser } = firebase.auth();
+    this.setState({ currentUser });
+  }
+
   render() {
+    const { currentUser } = this.state;
+    console.log(currentUser);
     return (
       <View style={styles.container}>
-        <Text>Dashboard</Text>
+        <Text>Hi {currentUser && currentUser.email}!</Text>
       </View>
     );
   }
 }
 
-export default Dashboard;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    alignItems: "center"
   }
 });

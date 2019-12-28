@@ -1,45 +1,56 @@
-import React from "react";
+import React, { Component } from "react";
 import { StyleSheet, Text, TextInput, View, Button } from "react-native";
 import * as firebase from "firebase";
+import "firebase/firestore";
 
-export default class Login extends React.Component {
+let db = firebase.firestore();
+
+export default class FirstTime extends Component {
   state = { email: "", password: "", errorMessage: null };
 
-  handleLogin = () => {
+  handleSignUp = () => {
     const { email, password } = this.state;
     firebase
       .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then(() => this.props.navigation.navigate("Dashboard"))
+      .createUserWithEmailAndPassword(email, password)
+      .then(function(result) {
+        console.log(result);
+        firebase
+          .database()
+          .ref("/users/" + result.user.uid)
+          .set({
+            email: result.user.email
+          });
+      })
       .catch(error => this.setState({ errorMessage: error.message }));
   };
 
   render() {
     return (
       <View style={styles.container}>
-        <Text>Login</Text>
+        <Text>Sign Up</Text>
         {this.state.errorMessage && (
           <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
         )}
         <TextInput
-          style={styles.textInput}
-          autoCapitalize="none"
           placeholder="Email"
+          autoCapitalize="none"
+          style={styles.textInput}
           onChangeText={email => this.setState({ email })}
           value={this.state.email}
         />
         <TextInput
-          secureTextEntry
-          style={styles.textInput}
-          autoCapitalize="none"
+          // secureTextEntry
           placeholder="Password"
+          autoCapitalize="none"
+          style={styles.textInput}
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button title="Login" onPress={this.handleLogin} />
+        <Button title="Sign Up" onPress={this.handleSignUp} />
         <Button
-          title="Don't have an account? Sign Up"
-          onPress={() => this.props.navigation.navigate("SignUp")}
+          title="Already have an account? Login"
+          onPress={() => this.props.navigation.navigate("Login")}
         />
       </View>
     );

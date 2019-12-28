@@ -1,39 +1,28 @@
-import React, { Component } from "react";
-import { StyleSheet, View, ActivityIndicator } from "react-native";
-import firebase from "firebase";
+import React from "react";
+import { View, Text, ActivityIndicator, StyleSheet } from "react-native";
+import * as firebase from "firebase";
 
-class Loading extends Component {
+export default class Loading extends React.Component {
   componentDidMount() {
-    this.checkIfLoggedIn();
+    firebase.auth().onAuthStateChanged(user => {
+      this.props.navigation.navigate(user ? "Dashboard" : "SignUp");
+    });
   }
-  checkIfLoggedIn = () => {
-    firebase.auth().onAuthStateChanged(
-      function(user) {
-        if (user) {
-          this.props.navigation.navigate("Dashboard");
-        } else {
-          this.props.navigation.navigate("Login");
-        }
-      }.bind(this)
-    );
-  };
 
   render() {
     return (
       <View style={styles.container}>
+        <Text>Loading</Text>
         <ActivityIndicator size="large" />
       </View>
     );
   }
 }
 
-export default Loading;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    alignItems: "center"
   }
 });

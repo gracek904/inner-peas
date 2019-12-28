@@ -4,13 +4,15 @@ import { createStackNavigator } from "react-navigation-stack";
 import Loading from "./app/components/auth/Loading";
 import Login from "./app/components/auth/Login";
 import Dashboard from "./app/components/auth/Dashboard";
-
-import Home from "./app/components/Home";
+import SignUp from "./app/components/auth/SignUp";
+import First from "./app/components/auth/FirstTime";
 
 const AuthNavigator = createSwitchNavigator({
   Loading: Loading,
   Login: Login,
-  Dashboard: Dashboard
+  Dashboard: Dashboard,
+  SignUp: SignUp,
+  First: First
 });
 
 const root = createStackNavigator(
@@ -18,13 +20,7 @@ const root = createStackNavigator(
     Auth: AuthNavigator
   },
   {
-    initialRouteName: "Loading",
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: "black"
-      },
-      headerTintColor: "white"
-    }
+    initialRouteName: "Auth"
   }
 );
 
