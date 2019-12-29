@@ -8,36 +8,21 @@ export default class Dashboard extends Component {
     currentUser: null
   };
 
-  // getName = async () => {
-  //   const { currentUser } = firebase.auth();
-  //   this.setState({ currentUser });
-  //   const uid = currentUser.uid;
-  //   let userName = null;
-  //   await db.collection("users")
-  //     .doc(uid)
-  //     .get()
-  //     .then(doc => {
-  //       if (doc && doc.exists) {
-  //         userName = doc.data().name;
-  //         this.setState({ userName: doc.data().name });
-  //       }
-  //     });
-  // };
-
-  // componentWillMount() {
-  //   this.getName();
-  // }
+  componentDidMount() {
+    const { currentUser } = firebase.auth();
+    this.setState({ currentUser });
+  }
 
   render() {
     const { currentUser } = this.state;
     return (
       <View style={styles.container}>
-        <Text>Hi {this.state.currentUser && this.state.}!</Text>
+        <Text>Hi {currentUser && currentUser.email}!</Text>
+
         <View style={styles.btnContainer}>
           <TouchableOpacity
             style={styles.userBtn}
             onPress={() => this.props.navigation.navigate("Map")}
-            onPress={this.getName}
           >
             <Text style={styles.btnTxt}>Map</Text>
           </TouchableOpacity>

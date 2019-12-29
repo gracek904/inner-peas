@@ -33,7 +33,7 @@ export default class SignUp extends Component {
           <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
         )}
         <TextInput
-          placeholder="Email (SignUp)"
+          placeholder="Email"
           autoCapitalize="none"
           style={styles.textInput}
           onChangeText={email => this.setState({ email })}
@@ -41,7 +41,7 @@ export default class SignUp extends Component {
         />
         <TextInput
           // secureTextEntry
-          placeholder="Password (SignUp)"
+          placeholder="Password"
           autoCapitalize="none"
           style={styles.textInput}
           onChangeText={password => this.setState({ password })}
