@@ -3,24 +3,24 @@ import { StyleSheet, Text, TextInput, View, Button } from "react-native";
 import * as firebase from "firebase";
 import "firebase/firestore";
 
-let db = firebase.firestore();
-
-export default class FirstTime extends Component {
+export default class SignUp extends Component {
   state = { email: "", password: "", errorMessage: null };
 
   handleSignUp = () => {
     const { email, password } = this.state;
+
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then(function(result) {
-        console.log(result);
-        firebase
-          .database()
-          .ref("/users/" + result.user.uid)
+        const uid = result.user.uid;
+        db.collection("users")
+          .doc(uid)
           .set({
             email: result.user.email
-          });
+          })
+          .then(console.log("success"))
+          .catch(error => console.log(error));
       })
       .catch(error => this.setState({ errorMessage: error.message }));
   };
@@ -33,7 +33,7 @@ export default class FirstTime extends Component {
           <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
         )}
         <TextInput
-          placeholder="Email"
+          placeholder="Email (SignUp)"
           autoCapitalize="none"
           style={styles.textInput}
           onChangeText={email => this.setState({ email })}
@@ -41,13 +41,13 @@ export default class FirstTime extends Component {
         />
         <TextInput
           // secureTextEntry
-          placeholder="Password"
+          placeholder="Password (SignUp)"
           autoCapitalize="none"
           style={styles.textInput}
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button title="Sign Up" onPress={this.handleSignUp} />
+        <Button title="Submit" onPress={this.handleSignUp} />
         <Button
           title="Already have an account? Login"
           onPress={() => this.props.navigation.navigate("Login")}
@@ -69,5 +69,8 @@ const styles = StyleSheet.create({
     borderColor: "gray",
     borderWidth: 1,
     marginTop: 8
+  },
+  switchButton: {
+    marginBottom: 10
   }
 });

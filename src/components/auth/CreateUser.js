@@ -1,23 +1,51 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TextInput, View, Button } from "react-native";
+import {
+  TextInput,
+  Button,
+  Text,
+  View,
+  StyleSheet,
+  Switch
+} from "react-native";
 import * as firebase from "firebase";
 import "firebase/firestore";
 
-let db = firebase.firestore();
+export default class CreateUser extends Component {
+  state = {
+    email: "",
+    password: "",
+    name: "",
+    vegan: "",
+    nut: "",
+    errorMessage: null
+  };
 
-export default class SignUp extends Component {
-  state = { email: "", password: "", errorMessage: null };
+  toggleVegan = value => {
+    this.setState({ vegan: value });
+  };
+
+  toggleNut = value => {
+    this.setState({ nut: value });
+  };
 
   handleSignUp = () => {
-    const { email, password } = this.state;
+    const { email, password, name, vegan, nut } = this.state;
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then(function(result) {
-        console.log(result);
-        db.ref("/users/" + result.user.uid).set({
-          email: result.user.email
-        });
+        // console.log(result);
+        const uid = result.user.uid;
+        db.collection("users")
+          .doc(uid)
+          .set({
+            email: result.user.email,
+            name: name,
+            vegan: vegan,
+            nut: nut
+          })
+          .then(console.log("success"))
+          .catch(error => console.log(error));
       })
       .catch(error => this.setState({ errorMessage: error.message }));
   };
@@ -44,10 +72,26 @@ export default class SignUp extends Component {
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button
-          title="Give your Personal Information!!!"
-          onPress={() => this.props.navigation.navigate("FirstTime")}
+        <TextInput
+          placeholder="Name"
+          autoCapitalize="none"
+          style={styles.textInput}
+          onChangeText={name => this.setState({ name })}
+          value={this.state.name}
         />
+        <Text>Vegan</Text>
+        <Switch
+          style={styles.switchButton}
+          onValueChange={this.toggleVegan}
+          value={this.state.vegan}
+        />
+        <Text>Nut</Text>
+        <Switch
+          style={styles.switchButton}
+          onValueChange={this.toggleNut}
+          value={this.state.nut}
+        />
+        <Button title="Submit" onPress={this.handleSignUp} />
         <Button
           title="Already have an account? Login"
           onPress={() => this.props.navigation.navigate("Login")}
@@ -69,5 +113,8 @@ const styles = StyleSheet.create({
     borderColor: "gray",
     borderWidth: 1,
     marginTop: 8
+  },
+  switchButton: {
+    marginBottom: 10
   }
 });
