@@ -34,7 +34,6 @@ export default class CreateUser extends Component {
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then(function(result) {
-        // console.log(result);
         const uid = result.user.uid;
         db.collection("users")
           .doc(uid)
@@ -50,28 +49,50 @@ export default class CreateUser extends Component {
       .catch(error => this.setState({ errorMessage: error.message }));
   };
 
+  changeSetting = () => {
+    const { name, vegan, nut } = this.state;
+    const { currentUser } = firebase.auth();
+    const uid = currentUser.uid;
+    let userRef = db.collection("users").doc(uid);
+    userRef
+      .update({
+        name: name,
+        vegan: vegan,
+        nut: nut
+      })
+      .then(console.log("Success changing user setting"))
+      .catch(error => console.log(error));
+  };
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Sign Up</Text>
+        <Text>{this.props.setting ? "Change Setting" : "Sign Up"}</Text>
+
         {this.state.errorMessage && (
           <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
         )}
-        <TextInput
-          placeholder="Email"
-          autoCapitalize="none"
-          style={styles.textInput}
-          onChangeText={email => this.setState({ email })}
-          value={this.state.email}
-        />
-        <TextInput
-          // secureTextEntry
-          placeholder="Password"
-          autoCapitalize="none"
-          style={styles.textInput}
-          onChangeText={password => this.setState({ password })}
-          value={this.state.password}
-        />
+
+        {!this.props.setting && (
+          <>
+            <TextInput
+              placeholder="Email"
+              autoCapitalize="none"
+              style={styles.textInput}
+              onChangeText={email => this.setState({ email })}
+              value={this.state.email}
+            />
+            <TextInput
+              // secureTextEntry
+              placeholder="Password"
+              autoCapitalize="none"
+              style={styles.textInput}
+              onChangeText={password => this.setState({ password })}
+              value={this.state.password}
+            />
+          </>
+        )}
+
         <TextInput
           placeholder="Name"
           autoCapitalize="none"
@@ -79,6 +100,7 @@ export default class CreateUser extends Component {
           onChangeText={name => this.setState({ name })}
           value={this.state.name}
         />
+
         <Text>Vegan</Text>
         <Switch
           style={styles.switchButton}
@@ -91,11 +113,17 @@ export default class CreateUser extends Component {
           onValueChange={this.toggleNut}
           value={this.state.nut}
         />
-        <Button title="Submit" onPress={this.handleSignUp} />
+
         <Button
-          title="Already have an account? Login"
-          onPress={() => this.props.navigation.navigate("Login")}
+          title="Submit"
+          onPress={this.props.setting ? this.changeSetting : this.handleSignUp}
         />
+        {!this.props.setting && (
+          <Button
+            title="Already have an account? Login"
+            onPress={() => this.props.navigation.navigate("Login")}
+          />
+        )}
       </View>
     );
   }

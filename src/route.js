@@ -6,6 +6,7 @@ import Login from "./components/auth/Login";
 import Dashboard from "./components/auth/Dashboard";
 import CreateUser from "./components/auth/CreateUser";
 import Map from "./components/screens/Map";
+import Setting from "./components/screens/Setting";
 
 const AuthNavigator = createSwitchNavigator({
   Loading,
@@ -17,7 +18,8 @@ const AuthNavigator = createSwitchNavigator({
 const root = createStackNavigator(
   {
     Auth: AuthNavigator,
-    Map
+    Map,
+    Setting
   },
   {
     initialRouteName: "Auth"

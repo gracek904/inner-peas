@@ -26,6 +26,12 @@ export default class Dashboard extends Component {
           >
             <Text style={styles.btnTxt}>Map</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.userBtn}
+            onPress={() => this.props.navigation.navigate("Setting")}
+          >
+            <Text style={styles.btnTxt}>Setting</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -40,8 +46,7 @@ const styles = StyleSheet.create({
   },
   userBtn: {
     padding: 15,
-    borderRadius: 10,
-    backgroundColor: "red"
+    borderRadius: 10
   },
   btnContainer: {
     flexDirection: "row",

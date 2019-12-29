@@ -5,21 +5,19 @@ import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
 import get from "lodash/get";
 
-const Marker = MapView.Marker;
-
 const deltas = {
   latitudeDelta: 0.006866,
   longitudeDelta: 0.007866
 };
 
 export default class Map extends Component {
-  state = {
-    myLocation: null,
-    places: [],
-    errorMessage: null
-  };
-
-  componentWillMount() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      myLocation: null,
+      region: null,
+      errorMessage: null
+    };
     this.getLocationAsync();
   }
 
@@ -30,24 +28,21 @@ export default class Map extends Component {
         errorMessage: "Permission to access location was denied"
       });
     }
-
     let mylocation = await Location.getCurrentPositionAsync({});
     this.setState({ mylocation });
-    // console.log(this.state.mylocation);
   };
 
   render() {
     const { mylocation } = this.state;
-    const region = {
+    let region = {
       latitude: get(mylocation, "coords.latitude"),
       longitude: get(mylocation, "coords.longitude"),
       ...deltas
     };
-
     return (
       <MapView
         style={styles.mapStyle}
-        region={region}
+        region={region.latitude && region}
         // showsUserLocation={true}
         zoomEnabled={true}
       ></MapView>
