@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "InnerPeas Template",
-    "slug": "inner-peas-template",
+    "name": "InnerPeas-T",
+    "slug": "inner-peas-t",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": ["ios", "android", "web"],
