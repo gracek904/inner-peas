@@ -1,10 +1,22 @@
 {
   "expo": {
+<<<<<<< HEAD
     "name": "InnerPeas-T",
     "slug": "inner-peas-t",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": ["ios", "android", "web"],
+=======
+    "name": "InnerPeas",
+    "slug": "inner-peas",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+>>>>>>> 799f4610f454430615d8866b3c5ed1e21125d567
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +28,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+<<<<<<< HEAD
     "assetBundlePatterns": ["**/*"],
+=======
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+>>>>>>> 799f4610f454430615d8866b3c5ed1e21125d567
     "ios": {
       "supportsTablet": true
     }
