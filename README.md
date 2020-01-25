@@ -2,6 +2,9 @@
 
 https://github.com/txconvergent/f19-health-nutrition
 
+## Important
+1. Get new API key
+
 ## To do
 
 1. Use Firestore to store menu
