@@ -1,15 +1,15 @@
 import React, { memo, useState } from "react";
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
-import Background from "../components/Background";
-import Logo from "../components/Logo";
-import Header from "../components/Header";
-import Button from "../components/Button";
-import TextInput from "../components/TextInput";
-import BackButton from "../components/BackButton";
+import Background from "../components/old/Background";
+import Logo from "../components/old/Logo";
+import Header from "../components/old/Header";
+import Button from "../components/old/Button";
+import TextInput from "../components/old/TextInput";
+import BackButton from "../components/old/BackButton";
 import { theme } from "../core/theme";
 import { emailValidator, passwordValidator } from "../core/utils";
 import { loginUser } from "../api/auth-api";
-import Toast from "../components/Toast";
+import Toast from "../components/old/Toast";
 
 const LoginScreen = ({ navigation }) => {
 	const [email, setEmail] = useState({ value: "", error: "" });

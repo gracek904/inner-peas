@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="053d9f14-36f4-4475-b8c7-fffc63a0207d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Place/PlaceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BackButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/BackButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/MapDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Category/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dashboard/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Category/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Paragraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/TextInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Toast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/AuthLoadingScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/AuthLoadingScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/ForgotPasswordScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/ForgotPasswordScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/LoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MapScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MapScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/RegisterScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="inner-peas" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WsfyCZkinnef3MKx9sE0WnqbKV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/screens" />
+      <recent name="$PROJECT_DIR$/src/components/old" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="053d9f14-36f4-4475-b8c7-fffc63a0207d" name="Default Changelist" comment="" />
+      <created>1579943475168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579943475168</updated>
+      <workItem from="1579943477999" duration="3363000" />
+      <workItem from="1579946950854" duration="7378000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="457" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579953694698">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="457" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.825@0.23.1440.825" timestamp="1579953694698" />
+    <state x="465" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579947947380">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="465" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.825@0.23.1440.825" timestamp="1579947947380" />
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom" timestamp="1579946947513">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1579946947513" />
+    <state width="1419" height="213" key="GridCell.Tab.0.center" timestamp="1579946947512">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1579946947512" />
+    <state width="1419" height="213" key="GridCell.Tab.0.left" timestamp="1579946947511">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1579946947511" />
+    <state width="1419" height="213" key="GridCell.Tab.0.right" timestamp="1579946947513">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1579946947513" />
+    <state x="221" y="74" key="SettingsEditor" timestamp="1579945818816">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1579945818816" />
+  </component>
+</project>

@@ -11,7 +11,8 @@ import {
 	MapScreen,
 } from "./screens";
 
-import { MapDashboard } from "./components/Dashboard"
+import Category from "./screens/Category/Category";
+import CategoryMap from "./screens/CategoryMap/CategoryMap";
 
 const AuthNavigator = createSwitchNavigator(
 	{
@@ -32,7 +33,8 @@ const Router = createStackNavigator(
 	{
 		Auth: AuthNavigator,
 		MapScreen,
-		MapDashboard
+		Category,
+		CategoryMap,
 	},
 	{
 		initialRouteName: "Auth",

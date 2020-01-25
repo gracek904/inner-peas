@@ -1,11 +1,11 @@
-import React from 'react';
-import { Provider } from 'react-native-paper';
-import App from './src';
-import { theme } from './src/core/theme';
+import React from "react";
+import { Provider } from "react-native-paper";
+import App from "./src/Router";
+import { theme } from "./src/core/theme";
 
-import * as firebase from 'firebase';
-import 'firebase/firestore';
-import { FIREBASE_CONFIG } from './src/core/config';
+import * as firebase from "firebase";
+import "firebase/firestore";
+import { FIREBASE_CONFIG } from "./src/core/config";
 
 // Initialize Firebase
 if (!firebase.apps.length) {

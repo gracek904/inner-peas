@@ -1,9 +1,9 @@
 import React, { memo } from "react";
-import Background from "../components/Background";
-import Logo from "../components/Logo";
-import Header from "../components/Header";
-import Button from "../components/Button";
-import Paragraph from "../components/Paragraph";
+import Background from "../components/old/Background";
+import Logo from "../components/old/Logo";
+import Header from "../components/old/Header";
+import Button from "../components/old/Button";
+import Paragraph from "../components/old/Paragraph";
 
 const HomeScreen = ({ navigation }) => (
 	<Background>
