@@ -20,6 +20,9 @@ const Dashboard = ({ navigation }) => (
     <Button mode="outlined" onPress={() => navigation.navigate("MapScreen")}>
       Map
     </Button>
+      <Button mode="outlined" onPress={() => navigation.navigate("MapDashboard")}>
+          MapDashboard
+      </Button>
   </Background>
 );
 

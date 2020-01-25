@@ -1,5 +1,6 @@
 import React, { Component, memo } from "react";
-import MapView from "react-native-maps";
+import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
+import { GOOGLE_API_KEY } from "react-native-dotenv";
 import { StyleSheet, Dimensions } from "react-native";
 import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
