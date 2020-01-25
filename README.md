@@ -5,6 +5,6 @@ https://github.com/txconvergent/f19-health-nutrition
 ## To do
 
 1. Use Firestore to store menu & Google Map API instead
-2. Custom marker
+2. ~~Custom marker (for now)~~
 3. https://stackoverflow.com/questions/54954385/react-useeffect-causing-cant-perform-a-react-state-update-on-an-unmounted-comp
 4. Change class to function?
