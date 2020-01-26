@@ -3,7 +3,7 @@
 https://github.com/txconvergent/f19-health-nutrition
 
 ## Important
-1. Add if statement to check if db already exists
+1. How to effectively use db ~~(Add if statement to check if db already exists)~~
 2. Get new API key
 
 ## To do
