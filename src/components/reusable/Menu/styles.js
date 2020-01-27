@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import {theme} from "../../core/theme";
+import {theme} from "../../../core/theme";
 const FONT_SIZE = 18;
 export default StyleSheet.create({
   container: {

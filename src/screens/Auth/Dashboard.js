@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
-import Background from '../../components/old/Background';
-import Logo from '../../components/old/Logo';
-import Header from '../../components/old/Header';
-import Paragraph from '../../components/old/Paragraph';
-import Button from '../../components/old/Button';
+import Background from '../../components/reusable/Background';
+import Logo from '../../components/reusable/Logo';
+import Header from '../../components/reusable/Header';
+import Paragraph from '../../components/reusable/Paragraph';
+import Button from '../../components/reusable/Button';
 import { logoutUser } from '../../api/auth-api';
 
 const Dashboard = ({ navigation }) => (

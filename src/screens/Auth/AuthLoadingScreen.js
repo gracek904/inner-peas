@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { ActivityIndicator } from 'react-native';
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import Background from '../../components/old/Background';
+import Background from '../../components/reusable/Background';
 import { theme } from '../../core/theme';
 
 const AuthLoadingScreen = ({ navigation }) => {

@@ -11,7 +11,7 @@ import { Container, Content } from 'native-base';
 //Styles
 import styles from './styles';
 import get from 'lodash/get';
-import RenderStarReview from '../../components/Review/ReviewStars';
+import RenderStarReview from '../../components/reusable/Review/ReviewStars';
 import { GOOGLE_API_KEY } from 'react-native-dotenv';
 
 export default class DetailScreen extends Component {

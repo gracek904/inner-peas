@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Container, Content } from 'native-base';
 
 //Components
-import SearchBar from '../../components/SearchBar/SearchBar';
-import MenuItem from '../../components/Menu/Menu';
+import SearchBar from '../../components/reusable/SearchBar/SearchBar';
+import MenuItem from '../../components/reusable/Menu/Menu';
 
 //Styles
 import styles from './styles';

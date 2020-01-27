@@ -10,7 +10,7 @@ import { Container, Content } from 'native-base';
 import { GOOGLE_API_KEY } from 'react-native-dotenv';
 
 //Components
-import RenderStarReview from '../../components/Review/ReviewStars';
+import RenderStarReview from '../Review/ReviewStars';
 //Styles
 import styles from './styles';
 

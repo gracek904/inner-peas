@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="053d9f14-36f4-4475-b8c7-fffc63a0207d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/core/Router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/AuthLoadingScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/ForgotPasswordScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/HomeScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/LoginScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/MapScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/RegisterScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/Auth/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Place/PlaceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Place/PlaceList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Place/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Place/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Review/ReviewStars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Review/ReviewStars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/SearchBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBar/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/BackButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/BackButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Logo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Paragraph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/TextInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/old/Toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/old/Toast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/AuthLoadingScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Category/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Category/Category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Category/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Category/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/CategoryMap/CategoryMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/CategoryMap/CategoryMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/CategoryMap/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/CategoryMap/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/DetailScreen/DetailScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DetailScreen/DetailScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/DetailScreen/DetailScreenOld.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/DetailScreen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DetailScreen/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/ForgotPasswordScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/HomeScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/LoginScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/MapScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/RegisterScreen.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +69,9 @@
       <workItem from="1580010582963" duration="1166000" />
       <workItem from="1580061611575" duration="22000" />
       <workItem from="1580140235952" duration="8000" />
-      <workItem from="1580140255728" duration="1023000" />
+      <workItem from="1580140255728" duration="1339000" />
+      <workItem from="1580142793649" duration="293000" />
+      <workItem from="1580162410494" duration="543000" />
     </task>
     <servers />
   </component>

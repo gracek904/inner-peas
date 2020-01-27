@@ -6,10 +6,10 @@ import { View } from 'react-native';
 import { GOOGLE_API_KEY } from 'react-native-dotenv';
 
 //Components
-import PlaceList from '../../components/Place/PlaceList';
+import PlaceList from '../../components/reusable/Place/PlaceList';
 //Styles
 import styles from './styles';
-import BackButton from '../../components/old/BackButton';
+import BackButton from '../../components/reusable/BackButton';
 import get from 'lodash/get';
 
 const deltas = {
