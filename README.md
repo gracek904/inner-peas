@@ -4,7 +4,9 @@ https://github.com/txconvergent/f19-health-nutrition
 
 ## Important
 1. How to effectively use db ~~(Add if statement to check if db already exists)~~
-2. Get new API key
+2. How to use query to filter and compare
+3. Potentially use cache
+3. Get new API key
 
 ## To do
 
