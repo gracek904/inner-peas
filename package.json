@@ -32,5 +32,8 @@
 		"prettier": "^1.18.2",
 		"react-navigation-tabs": "^2.7.0"
 	},
+	"prettier": {
+		"singleQuote": true
+	},
 	"private": true
 }

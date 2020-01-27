@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-	searchContainer: {
-		borderBottomColor: "#ECECEC",
-		borderBottomWidth: 2,
-	},
+  searchContainer: {
+    borderBottomColor: '#ECECEC',
+    borderBottomWidth: 2
+  }
 });
