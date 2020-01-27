@@ -132,8 +132,7 @@ class CategoryMap extends Component {
 									longitude: marker.marker.longitude,
 								}}
 								title={marker.name}
-								// Check
-								onCalloutPress={e => this.props.navigation.navigate("DetailScreen", {id: marker.id, name: this.title})}
+								onPress={e => this.props.navigation.navigate("DetailScreen", {id: marker.id, name: this.title})}
 							/>
 						))}
 
@@ -145,7 +144,6 @@ class CategoryMap extends Component {
 						this.props.navigation.navigate("Dashboard");
 					}}
 				/>
-				// bottom half
 				<View style={styles.placeList}>
 					<PlaceList places={places} />
 				</View>

@@ -9,11 +9,11 @@ import {
 	AuthLoadingScreen,
 	Dashboard,
 	MapScreen,
-	DetailScreen
 } from "./screens";
 
 import Category from "./screens/Category/Category";
 import CategoryMap from "./screens/CategoryMap/CategoryMap";
+import DetailScreen from "./screens/DetailScreen/DetailScreen";
 
 const AuthNavigator = createSwitchNavigator(
 	{

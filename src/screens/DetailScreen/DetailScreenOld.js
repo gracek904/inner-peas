@@ -29,14 +29,13 @@ export default class DetailScreen extends Component {
     getMenu = async () => {
 		const menu = [];
 		let docRef = await global.db.collection("restaurants").doc(this.state.id);
-
 		await docRef
 			.get()
 			.then(async function(doc) {
 				if (doc.exists) {
 					// console.log("Document data:", doc.data());
 					let temp = await doc.data().menu;
-					// console.log(temp)
+					console.log(temp)
 					Object.entries(temp).map(([key, value]) => {
 					 menu.push({id: key, nutrition: value})
 					})
@@ -46,14 +45,13 @@ export default class DetailScreen extends Component {
 				}
 			})
 			.catch(function(error) {
-				console.log("Error getting document:", error);
+				// console.log("Error getting document:", error);
 			});
 		this.setState({ menuList: menu });
 	};
 
 	render() {
 		const { menuList } = this.state;
-		console.log(menuList)
 		return (
 			<Container style={styles.container2}>
 				<Content>
