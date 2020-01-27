@@ -17,6 +17,8 @@ const deltas = {
 	longitudeDelta: 0.007866,
 };
 
+const Marker = MapView.Marker;
+
 class CategoryMap extends Component {
 	constructor(props) {
 		super(props);
@@ -30,7 +32,7 @@ class CategoryMap extends Component {
 			isLoading: false,
 			placeType: "restaurant",
 		};
-		this.getLocationAsync();
+		this.getLocationAsync().then(r => this.getPlaces());
 	}
 
 	getLocationAsync = async () => {
@@ -40,14 +42,12 @@ class CategoryMap extends Component {
 				errorMessage: "Permission to access location was denied",
 			});
 		}
-		let mylocation = await Location.getCurrentPositionAsync({});
+		let myLocation = await Location.getCurrentPositionAsync({});
 		this.setState({
-			mylocation,
-			lat: get(mylocation, "coords.latitude"),
-			long: get(mylocation, "coords.longitude"),
+			myLocation,
+			lat: get(myLocation, "coords.latitude"),
+			long: get(myLocation, "coords.longitude"),
 		});
-		console.log(this.state);
-		this.getPlaces();
 	};
 
 	componentDidMount() {
@@ -85,12 +85,22 @@ class CategoryMap extends Component {
 						latitude: element.geometry.location.lat,
 						longitude: element.geometry.location.lng,
 					};
-
+					if(marketObj.photos === undefined) {
+						marketObj.photos = null
+					}
+					if(marketObj.rating === undefined) {
+						marketObj.rating = null
+					}
 					markers.push(marketObj);
+					// db.collection("restaurants")
+					// 	.doc(marketObj.id)
+					// 	.set({
+					// 		obj: marketObj
+					// 	})
+					// 	.then(console.log("created restaurant db"));
 				});
 				//update our places array
 				this.setState({ places: markers });
-				console.log(this.state.places);
 			});
 	}
 
@@ -101,6 +111,7 @@ class CategoryMap extends Component {
 			longitude: long,
 			...deltas,
 		};
+
 		return (
 			<View style={styles.container}>
 				<View style={styles.mapView}>
@@ -114,22 +125,27 @@ class CategoryMap extends Component {
 						zoomEnabled={true}
 					>
 						{places.map((marker, i) => (
-							<MapView.Marker
+							<Marker
 								key={i}
 								coordinate={{
 									latitude: marker.marker.latitude,
 									longitude: marker.marker.longitude,
 								}}
 								title={marker.name}
+								// Check
+								onCalloutPress={e => this.props.navigation.navigate("DetailScreen", {id: marker.id, name: this.title})}
 							/>
 						))}
-						<BackButton
-							goBack={() => {
-								this.props.navigation.navigate("Dashboard");
-							}}
-						/>
+
 					</MapView>
 				</View>
+				<BackButton
+					goBack={() => {
+						// declare as const later
+						this.props.navigation.navigate("Dashboard");
+					}}
+				/>
+				// bottom half
 				<View style={styles.placeList}>
 					<PlaceList places={places} />
 				</View>

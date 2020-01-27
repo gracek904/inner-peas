@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="053d9f14-36f4-4475-b8c7-fffc63a0207d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/CategoryMap/CategoryMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/CategoryMap/CategoryMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Dashboard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +16,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/gracek904/inner-peas.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1WsfyCZkinnef3MKx9sE0WnqbKV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -27,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -55,7 +64,10 @@
       <updated>1579943475168</updated>
       <workItem from="1579943477999" duration="3363000" />
       <workItem from="1579946950854" duration="7378000" />
-      <workItem from="1579955071385" duration="142000" />
+      <workItem from="1579955071385" duration="724000" />
+      <workItem from="1579955805213" duration="3353000" />
+      <workItem from="1580010582963" duration="1166000" />
+      <workItem from="1580061611575" duration="22000" />
     </task>
     <servers />
   </component>
@@ -63,6 +75,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579955793765">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.825@0.23.1440.825" timestamp="1579955793765" />
     <state x="457" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579953694698">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -87,9 +103,13 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1579946947513" />
-    <state x="221" y="74" key="SettingsEditor" timestamp="1579945818816">
+    <state x="221" y="74" key="SettingsEditor" timestamp="1580011465006">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1579945818816" />
+    <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1580011465006" />
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1579956852581">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="385" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1579956852581" />
   </component>
 </project>

@@ -9,6 +9,7 @@ import {
 	AuthLoadingScreen,
 	Dashboard,
 	MapScreen,
+	DetailScreen
 } from "./screens";
 
 import Category from "./screens/Category/Category";
@@ -35,6 +36,7 @@ const Router = createStackNavigator(
 		MapScreen,
 		Category,
 		CategoryMap,
+		DetailScreen
 	},
 	{
 		initialRouteName: "Auth",

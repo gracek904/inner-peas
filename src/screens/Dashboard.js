@@ -11,7 +11,7 @@ const Dashboard = ({ navigation }) => (
 		<Logo />
 		<Header>Let’s start</Header>
 		<Paragraph>
-			Your amazing app starts here. Open you favourite code editor and start editing this project.
+			Innear Peas Project Demo App
 		</Paragraph>
 		<Button mode="outlined" onPress={() => logoutUser()}>
 			Logout

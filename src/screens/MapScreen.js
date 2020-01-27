@@ -5,7 +5,6 @@ import * as Location from "expo-location";
 import * as Permissions from "expo-permissions";
 import get from "lodash/get";
 import BackButton from "../components/old/BackButton";
-import Background from "../components/old/Background";
 
 const deltas = {
 	latitudeDelta: 0.006866,
