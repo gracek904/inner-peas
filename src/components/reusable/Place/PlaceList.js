@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import {
+  ActivityIndicator,
   FlatList,
   TouchableOpacity,
-  View,
-  ActivityIndicator
+  View
 } from 'react-native';
 import { ListItem, Text } from 'react-native-elements';
 import { Container, Content } from 'native-base';
 import { GOOGLE_API_KEY } from 'react-native-dotenv';
-
 //Components
 import RenderStarReview from '../Review/ReviewStars';
 //Styles
@@ -33,11 +32,16 @@ class PlaceList extends Component {
               renderItem={({ item }) => (
                 <TouchableOpacity>
                   <ListItem
+                    onPress={e =>
+                      this.props.navigation.navigate('DetailScreen', {
+                        id: item.id,
+                        name: this.title
+                      })
+                    }
                     key={item.id}
                     title={
                       <View style={styles.rowDirection}>
                         <Text>{item.name}</Text>
-                        <Text>1.4km</Text>
                       </View>
                     }
                     subtitle={

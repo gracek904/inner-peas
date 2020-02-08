@@ -3,6 +3,42 @@
   <component name="ChangeListManager">
     <list default="true" id="053d9f14-36f4-4475-b8c7-fffc63a0207d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/auth-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/BackButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/BackButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Logo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Logo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Menu/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Menu/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Paragraph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Paragraph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Place/PlaceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Place/PlaceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Place/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Place/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Review/ReviewStars.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Review/ReviewStars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/SearchBar/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/SearchBar/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/SearchBar/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/SearchBar/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/TextInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/TextInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reusable/Toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reusable/Toast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth/AuthLoadingScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth/AuthLoadingScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth/ForgotPasswordScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth/ForgotPasswordScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth/LoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth/MapScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth/MapScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Auth/RegisterScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Auth/RegisterScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Category/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Category/Category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Category/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Category/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/CategoryMap/CategoryMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/CategoryMap/CategoryMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/CategoryMap/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/CategoryMap/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/DetailScreen/DetailScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DetailScreen/DetailScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/DetailScreen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/DetailScreen/styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +74,19 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/reusable" />
       <recent name="$PROJECT_DIR$/src/core" />
       <recent name="$PROJECT_DIR$/src/screens/Auth" />
       <recent name="$PROJECT_DIR$/src/screens" />
       <recent name="$PROJECT_DIR$/src/components/old" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -72,6 +109,20 @@
       <workItem from="1580140255728" duration="1339000" />
       <workItem from="1580142793649" duration="293000" />
       <workItem from="1580162410494" duration="543000" />
+      <workItem from="1580164392460" duration="836000" />
+      <workItem from="1580314441366" duration="272000" />
+      <workItem from="1580316622794" duration="430000" />
+      <workItem from="1580317163704" duration="124000" />
+      <workItem from="1580317310288" duration="72000" />
+      <workItem from="1580317396715" duration="119000" />
+      <workItem from="1580358459964" duration="11000" />
+      <workItem from="1580359971102" duration="57000" />
+      <workItem from="1580360043966" duration="6000" />
+      <workItem from="1580959862157" duration="11000" />
+      <workItem from="1580960658070" duration="281000" />
+      <workItem from="1581138759204" duration="669000" />
+      <workItem from="1581142687146" duration="6271000" />
+      <workItem from="1581197307566" duration="11000" />
     </task>
     <servers />
   </component>
@@ -87,10 +138,18 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="457" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.825@0.23.1440.825" timestamp="1579953694698" />
+    <state x="461" y="279" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1580316755009">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="461" y="279" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.23.1440.825@0.23.1440.825" timestamp="1580316755009" />
     <state x="465" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579947947380">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="465" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.825@0.23.1440.825" timestamp="1579947947380" />
+    <state x="370" y="220" key="EditFileWatcherDialog" timestamp="1580314547552">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="370" y="220" key="EditFileWatcherDialog/0.23.1440.825@0.23.1440.825" timestamp="1580314547552" />
     <state width="1419" height="213" key="GridCell.Tab.0.bottom" timestamp="1579946947513">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -107,10 +166,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1419" height="213" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1579946947513" />
-    <state x="221" y="74" key="SettingsEditor" timestamp="1580011465006">
+    <state x="231" y="40" key="SettingsEditor" timestamp="1581146427763">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1580011465006" />
+    <state x="231" y="40" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581146427763" />
     <state x="385" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1579956852581">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

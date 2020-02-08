@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 const BackButton = ({ goBack }) => (
@@ -14,12 +14,12 @@ const BackButton = ({ goBack }) => (
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    top: getStatusBarHeight(),
+    top: 10 + getStatusBarHeight(),
     left: 10
   },
   image: {
-    width: 36,
-    height: 36
+    width: 49,
+    height: 49
   }
 });
 

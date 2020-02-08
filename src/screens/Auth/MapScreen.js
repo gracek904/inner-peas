@@ -1,6 +1,6 @@
 import React, { Component, memo } from 'react';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
-import { StyleSheet, Dimensions } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions';
 import get from 'lodash/get';
@@ -51,7 +51,7 @@ class MapScreen extends Component {
           region={region.latitude && region}
           // showsUserLocation={true}
           zoomEnabled={true}
-        ></MapView>
+        />
         <BackButton
           goBack={() => {
             this.props.navigation.navigate('Dashboard');

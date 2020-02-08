@@ -4,7 +4,6 @@ import * as Permissions from 'expo-permissions';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { View } from 'react-native';
 import { GOOGLE_API_KEY } from 'react-native-dotenv';
-
 //Components
 import PlaceList from '../../components/reusable/Place/PlaceList';
 //Styles
@@ -151,7 +150,7 @@ class CategoryMap extends Component {
           }}
         />
         <View style={styles.placeList}>
-          <PlaceList places={places} />
+          <PlaceList places={places} navigation={this.props.navigation} />
         </View>
       </View>
     );

@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Background from '../../components/reusable/Background';
 import Logo from '../../components/reusable/Logo';
 import Header from '../../components/reusable/Header';
@@ -9,8 +9,8 @@ import BackButton from '../../components/reusable/BackButton';
 import { theme } from '../../core/theme';
 import {
   emailValidator,
-  passwordValidator,
-  nameValidator
+  nameValidator,
+  passwordValidator
 } from '../../core/utils';
 import { signInUser } from '../../api/auth-api';
 import Toast from '../../components/reusable/Toast';

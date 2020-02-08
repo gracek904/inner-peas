@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import {
   FlatList,
+  Image,
+  StyleSheet,
   TouchableOpacity,
-  View,
-  ActivityIndicator
+  View
 } from 'react-native';
 import { ListItem, Text } from 'react-native-elements';
 import { Container, Content } from 'native-base';
-
 //Styles
 import styles from './styles';
-import get from 'lodash/get';
-import RenderStarReview from '../../components/reusable/Review/ReviewStars';
-import { GOOGLE_API_KEY } from 'react-native-dotenv';
+import BackButton from '../../components/reusable/BackButton';
 
 export default class DetailScreen extends Component {
   constructor(props) {
@@ -57,11 +55,12 @@ export default class DetailScreen extends Component {
           {menuList && menuList.length > 0 && (
             <FlatList
               data={menuList}
+              // *Fix*
+              keyExtractor={(item, index) => index.toString()}
               renderItem={({ item }) => (
                 <TouchableOpacity>
                   {item.name && (
                     <ListItem
-                      key={item.value}
                       title={
                         <View style={styles.rowDirection}>
                           <Text>{item.name}</Text>
@@ -76,6 +75,12 @@ export default class DetailScreen extends Component {
             />
           )}
         </Content>
+        <BackButton
+          goBack={() => {
+            // declare as const later
+            this.props.navigation.navigate('CategoryMap');
+          }}
+        />
       </Container>
     );
   }

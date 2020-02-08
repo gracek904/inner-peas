@@ -1,5 +1,5 @@
 import React, { memo, useState } from 'react';
-import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Background from '../../components/reusable/Background';
 import Logo from '../../components/reusable/Logo';
 import Header from '../../components/reusable/Header';
